@@ -1,0 +1,109 @@
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+#winMessage {
+  font-size: 15px;
+  animation: colorChange 5s infinite alternate; /* Apply the animation to the text */
+}
+
+@keyframes colorChange1 {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+#winMessage1 {
+  font-size: 15px;
+  animation: colorChange1 5s infinite alternate; /* Apply the animation to the text */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+#instructions {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+#frame {
+  position: relative;
+  width: 50%;
+  height: 80vh;
+  margin: auto;
+  border: 2px solid yellow;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+#basket {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 70px;
+  background-color: black;
+  background-image: url("basket1.png");
+  background-size: contain;
+  z-index: 2; /* Ensure basket is above balls */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ball {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* CSS for basket selection */
+#basketSelectionWrapper {
+  align-self: right;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: black; /* Colored frame background */
+  padding: 10px;
+  border: 2px solid yellow; /* Yellow border */
+}
+
+#basketSelection img {
+  width: 50px; /* Adjust image width */
+  height: auto;
+  cursor: pointer;
+}
+
+#defaultBasketFrame {
+  margin-top: 10px;
+}
+
+#defaultBasketFrame img {
+  width: 30px; /* Adjust image width */
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

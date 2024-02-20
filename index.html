@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Game</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="basketfav.jpg" type="image/x-icon">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div id = "instructions">
+        <p>Instructions:</p>
+        <p>Press key A to move left.</p>
+        <p>Press key D to move right</p>
+        <p>Touch more number of balls  with your basket</p>
+        <p>Increase your score.</p>
+        <P>Score Earned: <span id="scoreValue">0</span></p></P>
+        <P>Last Highest Score: <span id="cookieDisplay"></span></P>
+        <p id="winMessage">Win in multiples of 10 to hear a sound</p>
+        <p id="winMessage1">Win till 40 to hear different sound  again</p>
+    </div>
+
+    <!-- <div id="basket"></div>
+    <script src="script1.js"></script> -->
+
+   
+
+    <!-- <div id="defaultBasketFrame">
+        <img src="basket_small.png" alt="Small Basket">
+    </div> -->
+
+
+    <div id="frame"  ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- <div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+        <div id="basket" draggable="true" ondragstart="drag(event)" 
+        ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    
+
+    
+    <div id="basketSelectionWrapper" style="width: 22%;">
+        <div id="basketSelection" style="width: 100%;">
+        <img src="basket1.png" alt="Basket 1" draggable="true" ondragstart="drag(event)">
+        <img src="basket2.png" alt="Basket 2" draggable="true" ondragstart="drag(event)">
+        <img src="basket3.png" alt="Basket 3" draggable="true" ondragstart="drag(event)">
+        <img src="basket4.png" alt="Basket 4" draggable="true" ondragstart="drag(event)">
+
+    </div>
+    <h1 id="winMessage">SELECT YOUR FAVORITE BASKET (DRAG N DROP)</h1>
+    
+  
+    
+
+<!-- 
+    <div id="frame">
+        <div id="basket"></div>
+    </div> -->
+    <audio id="collisionSound" src="ping.mp3"></audio>
+    <audio id="win" src="win.wav"></audio>
+    <audio id="winMore" src="win_more.wav"></audio>
+   
+</body>
+</html>
