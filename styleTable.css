@@ -1,0 +1,30 @@
+/* styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(211, 203, 203, 0.5);
+    
+  }
+  
+  table th, table td {
+    border: 1px solid blue;
+    padding: 8px;
+    color: darkblue;
+    font-weight: bolder;
+    size: 10%;
+        
+
+  }
+body{
+    background-image: url('ps1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+    
+    
+
+}
+    
+}
